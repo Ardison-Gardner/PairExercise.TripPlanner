@@ -7,13 +7,13 @@ const iconURLs = {
 };
 
 const buildMarker = function(type, coords) {
-  let markerType = iconURLs[type];
-  console.log(markerType);
+  const markerType = iconURLs[type];
+  const markerCoords = coords;
   const markerDomEl = document.createElement('div');
   markerDomEl.style.width = '32px';
   markerDomEl.style.height = '39px';
   markerDomEl.style.backgroundImage = `url(${markerType})`;
-  return new mapbox.Marker(markerDomEl).setLngLat([-74.009151, 40.70508]);
+  return new mapbox.Marker(markerDomEl).setLngLat(markerCoords);
 };
 
 module.exports = buildMarker;

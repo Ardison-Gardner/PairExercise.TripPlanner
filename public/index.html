@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Trip Planner</title>
     <link rel="stylesheet" href="./style.css"></link>
@@ -7,7 +8,38 @@
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
   </head>
+
   <body>
+    <header>
+      <h1>TRIP FINDER</h1>
+    </header>
+
+    <aside>
+      <ul>
+        <li>Hotels</li>
+        <select name="hotels">
+          <option value="default">Default</option>
+        </select>
+        <li>Restaurants</li>
+        <select name="restaurants">
+            <option value="default">Default</option>
+          </select>
+        <li>Activities</li>
+        <select name="activities">
+            <option value="default">Default</option>
+          </select>
+      </ul>
+    </aside>
+
+    <aside>
+        <ul>
+          <li>My Hotels</li>
+          <li>My Restaurants</li>
+          <li>My Activities</li>
+        </ul>
+    </aside>
+
     <div id="map"></div>
+
   </body>
 </html>
