@@ -8,7 +8,26 @@ body {
   background-color: #C1B5AD;
 }
 
-#map {
+#contents {
+  display: flex;
+}
+
+aside {
+  float: right;
   height: 100vh;
-  width: 100vw;
+  width: 20vw
+}
+
+.new-marker {
+
+}
+
+.my-marker {
+
+}
+
+#map {
+  float: left;
+  height: 100vh;
+  width: 80vw;
 }

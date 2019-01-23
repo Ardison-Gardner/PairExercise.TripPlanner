@@ -5,41 +5,49 @@
     <title>Trip Planner</title>
     <link rel="stylesheet" href="./style.css"></link>
     <script src="./bundle.js" defer></script>
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' /> -->
   </head>
 
   <body>
     <header>
       <h1>TRIP FINDER</h1>
     </header>
+    <div class='contents'>
+      <div class='aside'>
+        <aside id='new-marker'>
+          <ul>
+            <li>Hotels</li>
+            <select name="hotels">
+              <option value="default">Default</option>
+            </select>
+            <button type="button">+</button>
+            <li>Restaurants</li>
+            <select name="restaurants">
+                <option value="default">Default</option>
+              </select>
+              <button type="button">+</button>
+            <li>Activities</li>
+            <select name="activities">
+                <option value="default">Default</option>
+              </select>
+              <button type="button">+</button>
+          </ul>
+        </aside>
+      </div>
 
-    <aside>
-      <ul>
-        <li>Hotels</li>
-        <select name="hotels">
-          <option value="default">Default</option>
-        </select>
-        <li>Restaurants</li>
-        <select name="restaurants">
-            <option value="default">Default</option>
-          </select>
-        <li>Activities</li>
-        <select name="activities">
-            <option value="default">Default</option>
-          </select>
-      </ul>
-    </aside>
+      <div class='aside'>
+        <aside id='my-markers'>
+            <ul>
+              <li>My Hotels</li>
+              <li>My Restaurants</li>
+              <li>My Activities</li>
+            </ul>
+        </aside>
+      </div>
 
-    <aside>
-        <ul>
-          <li>My Hotels</li>
-          <li>My Restaurants</li>
-          <li>My Activities</li>
-        </ul>
-    </aside>
+      <div id="map"></div>
 
-    <div id="map"></div>
-
+    </div>
   </body>
 </html>
